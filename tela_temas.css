@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(20, 23, 26);
 }
 
 .container{
     height: 100%;
     align-items: stretch;
-    background-color: rgb(20, 23, 26);
 }
 
 .sidebar{
@@ -156,93 +156,50 @@ ul{
     display: none;
 }
 
-.ranking{
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    color: white;
-}
-
 h3{
     text-align: center;
     color: white;
 }
 
-.box{
-    position: relative;
-    min-width: 200px;
-}
-
-.box .lista{
-    position: relative;
+.grid {
+    margin-top: 50px;
     display: flex;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    overflow: hidden;
-    background: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    row-gap: 100px;
+    column-gap: 200px;
+    max-width: 1800px;
 }
 
-.box:hover .lista{
-    filter: blur(5px);
+.grid-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.grid:hover .grid-item{
+    filter: blur(3px);
     opacity: 0.25;
 }
 
-.box .lista:hover{
+.grid .grid-item:hover{
     box-shadow: -10px 20px 35px rgba(0,0,0,0.15);
     transform: scale(1.15);
     filter: blur(0px);
     opacity: 1;
-}
-
-.box .lista .imgem{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 10px;
-}
-
-.box .lista .imgem img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.box .lista .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.box .lista .content .rank small{
-    opacity: 0.25s;
-}
-
-.box .lista:hover .content h4{
-    left: 40%;
-}
-
-.box .lista:hover .content .rank{
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.box .lista .content h4{
-    line-height: 1.2em;
-    font-weight: 600;
-    position: absolute;
-    left: -500px;
-    transition: 0.4s;
-}
-
-
-.box .lista:hover .content .rank .primeiro{
-    color: red;
 }
