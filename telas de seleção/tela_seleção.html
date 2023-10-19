@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="tela_temas.css">
+    <link rel="stylesheet" href="tela_seleção.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Tela Temas</title>
+    <title>Tela Ranking</title>
 </head>
 <body>
     <div class="container">
+
         <div id="sidebar" class="sidebar">
             <div class="conteudo-sidebar">
                 <a class="item-sidebar" href="#">Temas</a>
@@ -17,7 +18,7 @@
             </div>
         </div>
 
-       <header>
+        <header>
             <nav class="menu-top">
                 <ul class="menu">
                     <li class="menu-sanduiche">
@@ -36,19 +37,18 @@
                 </ul>
             </nav>
         </header>
-        <h3>TEMAS</h3>
 
-        <div class="wrapper">
-            <div class="grid"> 
-                <div class="grid-item">Tema 1</div> 
-                <div class="grid-item">Tema 2</div>  
-                <div class="grid-item">Tema 3</div>  
-                <div class="grid-item">Tema 4</div>  
-                <div class="grid-item">Tema 5</div>  
-                <div class="grid-item">Tema 6</div>  
-            </div>
+        <div class="qualPrefere">Qual você prefere?</div>
+        <div class="ranking">
+        	<p class="textoLateralThis">T H I S</p>
+                <button class="selecao"></button>
+            <div class="bolinha"><h1 class="bolinhaH1">OR</h1></div>
+                <button class="selecao"></button>
+            <p class="textoLateralThat">T H A T</p>
         </div>
+
+        <div class="overlay hidden" id="overlay"></div>
+        
     </div>
-    <div class="overlay hidden" id="overlay"></div>
-    <script src="tela_temas.js"></script>
+    <script src="tela_seleção.js"></script>
 </body>
